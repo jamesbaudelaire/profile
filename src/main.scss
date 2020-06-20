@@ -1,0 +1,92 @@
+:root{
+  --font-primary: 'Ubuntu', cursive;
+--font-secondary: 'Lato', sans-serif;
+--shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+--theme:#304ffe;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Ubuntu&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+
+
+#design-button{
+  font-family: var(--font-primary);
+  text-transform:uppercase;
+  margin:20px;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  border:none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+*{
+  transition: .5s;
+}
+
+
+
+
+// .frame-10{
+
+  body{
+    margin:0;
+    &::after {
+      content: "";
+      display: block;
+      height: 100px;
+    }
+    font-family: var(--font-primary);
+  
+    a{
+      text-decoration: none;
+    }
+    
+  }
+
+
+  #navbar{
+    position: fixed;
+    bottom:0;right:0;
+    background:grey;
+    overflow: hidden;
+    padding: 5px 10px;
+    width:calc(100% - 20px);
+    i{
+      font-size:40px;
+      margin: 5px 10px;
+      line-height: 30px;
+      height:30px;
+      display:inline-block;
+      color:var(--theme);
+    }
+  }
+  
+  
+ 
+  
+  #projects{
+  
+    .project{
+  width:250px;height:150px;margin:20px;
+  box-shadow:var(--shadow);
+  display: inline-block;
+    }
+  
+  }
+
+  #project{
+    width:100%;
+    background:grey;
+    
+    }
+
+  // }
+
+.frame-9{
+ 
+}
+
+
+
