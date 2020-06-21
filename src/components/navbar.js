@@ -1,23 +1,29 @@
 import React, { useState } from "react";
 
-export const Navbar = ({ phone, email, links }) => {
+export const Navbar = ({ phone, email }) => {
+  let links = [
+    {
+      icon: "phone",
+      link: `tel:${phone}`
+    },
+    {
+      icon: "email",
+      link: `mailto:${email}`
+    },
+    {
+      icon: "code",
+      link: `https://github.com/jamesbaudelaire`
+    }
+  ];
   return (
     <div id="navbar">
-      <a href={`tel:${phone}`} rel="noopener noreferrer" target="_blank">
-        <i className="material-icons-round phone">phone</i>
-      </a>
-
-      <a href={`mailto:${email}`} rel="noopener noreferrer" target="_blank">
-        <i className="material-icons-round email">email</i>
-      </a>
-
-      <a
-        href={`https://github.com/jamesbaudelaire`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="material-icons">code</i>
-      </a>
+      {links.map(({ icon, link }) => (
+        <a href={link} key={icon} target="_blank" rel="noopener noreferrer">
+          <button>
+            <i className="material-icons-round">{icon}</i>
+          </button>
+        </a>
+      ))}
     </div>
   );
 };

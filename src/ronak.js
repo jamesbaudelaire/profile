@@ -2,37 +2,55 @@ export const Ronak = {
   projects: [
     {
       name: "RSRV",
-      url: `https://rsrv.netlify.app/`,
-      img: `rsrv`,
-      info: ``,
+      img: `reserve`,
+      url: `https://rsrv.netlify.app`,
+      info: `manage reservations`,
       tools: [
-        "Authencation and database using Firebase",
-        "Email notification using SendGrid",
+        "Firebase for authentication and database",
+        "SendGrid for email notification",
+        "Netlify and Github for CI/CD",
         "React and Redux"
       ],
-      code: `reserve`,
+      links: [
+        {
+          icon: "link",
+          link: `https://rsrv.netlify.app`
+        },
+        {
+          icon: "code",
+          link: `https://github.com/jamesbaudelaire/reserve`
+        }
+      ],
       features: [
         "CRUD reservations and notetaking",
-        "Use app without an account",
-        "User account and cloud data sync",
-        "Guest reservation form with email notifcation"
+        "accounts and cloud data sync",
+        "form with email notifcation"
       ]
     },
     {
       name: "M3NU",
-      url: `menu`,
-      img: ``,
-      info: `Designed and developed to app-ify the restaurant menu.`,
+      img: `menu`,
+      url: `https://m3nu.netlify.app/about`,
+      info: `app-ify the restaurant menu`,
       tools: [
         "Cloudinary for image hosting",
-        "CI/CD using Netlify and Github",
-        "React and Redux"
+        "Netlify and Github for CI/CD",
+        "React"
       ],
-      code: `menu`,
+      links: [
+        {
+          icon: "link",
+          link: `https://m3nu.netlify.app`
+        },
+        {
+          icon: "code",
+          link: `https://github.com/jamesbaudelaire/menu`
+        }
+      ],
       features: [
-        "Save and share items",
-        "Quick actions",
-        "Filter by type",
+        "save and share items",
+        "quick actions",
+        "filter by type",
         "URL routing"
       ]
     }

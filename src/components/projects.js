@@ -6,12 +6,12 @@ export const Projects = ({ projects, selectProject }) => {
       {projects.map((p, index) => (
         <div
           key={p.name}
-          onClick={() => {
+          onClick={element => {
             selectProject(projects[index]);
           }}
-          className="project"
+          className="project desktop"
         >
-          {p.name}
+          <iframe src={p.url} title={p.name} />
         </div>
       ))}
     </div>
