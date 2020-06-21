@@ -23,8 +23,9 @@ export const Ronak = {
       ],
       features: [
         "CRUD reservations and notetaking",
-        "accounts and cloud data sync",
-        "form with email notifcation"
+        "realtime cloud database per user",
+        "form with email notification",
+        "calendar"
       ]
     },
     {
@@ -58,8 +59,8 @@ export const Ronak = {
   name: "Ronak Mistry",
   phone: `4794596794`,
   email: "ronakmystery@gmail.com",
-  title: "Web (Designer & Developer)",
-  subtitle: "Specialized in frontend UI/UX",
+  title: "Web ( Designer & Developer )",
+  subtitle: "specialized in frontend UI/UX",
   links: [
     {
       name: "Github",
