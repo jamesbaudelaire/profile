@@ -36,7 +36,9 @@ export const App = () => {
         <div className="subtitle">{Ronak.subtitle}</div>
       </div>
 
-      <Projects selectProject={setSelectedProject} projects={Ronak.projects} />
+      <Projects 
+      selected={selectedProject}
+      selectProject={setSelectedProject} projects={Ronak.projects} />
 
       {selectedProject && (
         <Project selectProject={setSelectedProject} project={selectedProject} />

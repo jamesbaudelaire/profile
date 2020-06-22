@@ -2,7 +2,7 @@ export const Ronak = {
   projects: [
     {
       name: "RSRV",
-      img: `reserve`,
+      id:'rsrv',
       url: `https://rsrv.netlify.app`,
       info: `manage reservations`,
       tools: [
@@ -30,7 +30,7 @@ export const Ronak = {
     },
     {
       name: "M3NU",
-      img: `menu`,
+      id: `menu`,
       url: `https://m3nu.netlify.app/about`,
       info: `app-ify the restaurant menu`,
       tools: [
