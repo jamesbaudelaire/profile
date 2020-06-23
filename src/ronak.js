@@ -2,9 +2,9 @@ export const Ronak = {
   projects: [
     {
       name: "RSRV",
-      id:'rsrv',
+      id: "rsrv",
       url: `https://rsrv.netlify.app`,
-      info: `manage reservations`,
+      info: `reservation manager`,
       tools: [
         "Firebase for authentication and database",
         "SendGrid for email notification",

@@ -11,7 +11,7 @@ let animate = () => {
   [...Array(5)].forEach((frame, index) => {
     setTimeout(() => {
       document.querySelector("html").classList.add(`frame-${index + 1}`);
-    }, 700 * index);
+    }, 500 * index);
   });
 };
 
