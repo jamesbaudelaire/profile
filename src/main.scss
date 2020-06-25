@@ -1,7 +1,7 @@
 :root{
   --font-primary: 'Ubuntu', cursive;
 --font-secondary: 'Lato', sans-serif;
---shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+--shadow:2px 2px 6px rgba(0,0,0), -2px -2px 6px rgba(255,255,255,.1);
 --theme:#304ffe;
 --inset: inset 0px 2px 5px 0px rgb(0, 0, 0, 0.75);
 
@@ -55,7 +55,7 @@ iframe,#navbar button{
     overscroll-behavior: contain;
     margin:0;
     user-select:none;
-    background:rgb(30,30,30);
+    background:rgb(20,20,20);
     color:rgb(200,200,200);
     &::after {
       content: "";
@@ -133,7 +133,7 @@ iframe,#navbar button{
     button{
       box-shadow:var(--inset);
 background: none;
-      margin: 5px 10px;
+      margin:10px;
       border-radius: 5px;
       border:none;
       cursor: pointer;
@@ -165,7 +165,7 @@ box-shadow: none;
         };
       
       .project{
-        opacity: .5;
+        opacity: .25;
         cursor: pointer;
     width:300px;height:210px;
     margin:20px;
@@ -182,10 +182,6 @@ height: 500px;width:270px;
 margin:20px;
 };
 
-
-&.selected{
-  opacity:1;
-}
     iframe{
         display: unset !important;
         border:none;
@@ -207,6 +203,9 @@ transform-origin: top left;
         margin-right:20px;
       }
     
+      &.selected{
+        opacity:1;
+      }
     }
   }
 
@@ -220,7 +219,7 @@ transform-origin: top left;
     width:calc(100% - 40px);
     background:#304ffe;
     position: fixed;
-    bottom:80px;left:0;right:0;
+    bottom:90px;left:0;right:0;
     border-radius: 5px;
     margin: auto;
     padding-bottom:15px;
