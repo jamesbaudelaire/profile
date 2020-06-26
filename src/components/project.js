@@ -47,9 +47,12 @@ export const Project = ({ project, selectProject }) => {
         <div className="links">
           <i className="material-icons-round">public</i>
           LINKS
-          {project.links.map(({ icon, link }) => (
+          {project.links.map(({ icon, link, name }) => (
             <a href={link} key={icon} target="_blank" rel="noopener noreferrer">
-              <i className="material-icons-round link">{icon}</i>
+              <div>
+                <i className="material-icons-round link">{icon}</i>
+                {name}
+              </div>
             </a>
           ))}
         </div>

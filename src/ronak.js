@@ -14,11 +14,13 @@ export const Ronak = {
       links: [
         {
           icon: "link",
-          link: `https://rsrv.netlify.app`
+          link: `https://rsrv.netlify.app`,
+          name: "URL"
         },
         {
           icon: "code",
-          link: `https://github.com/jamesbaudelaire/reserve`
+          link: `https://github.com/jamesbaudelaire/reserve`,
+          name: "GITHUB"
         }
       ],
       features: [
@@ -41,11 +43,13 @@ export const Ronak = {
       links: [
         {
           icon: "link",
-          link: `https://m3nu.netlify.app`
+          link: `https://m3nu.netlify.app`,
+          name: "URL"
         },
         {
           icon: "code",
-          link: `https://github.com/jamesbaudelaire/menu`
+          link: `https://github.com/jamesbaudelaire/menu`,
+          name: "GITHUB"
         }
       ],
       features: [

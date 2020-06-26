@@ -20,6 +20,8 @@ iframe,#navbar button{
 }
 
 #design-button{
+  background:var(--theme);
+  color:white;
   font-family: var(--font-primary);
   text-transform:uppercase;
   margin:20px;
@@ -108,7 +110,7 @@ iframe,#navbar button{
     overflow: hidden;
     padding: 5px 10px;
     width:calc(100% - 20px);
-    padding-bottom: 10px;
+
     @media(min-width: 1000px){
       left: 20px;
       box-shadow: none;
@@ -186,6 +188,7 @@ margin:20px;
         display: unset !important;
         border:none;
         pointer-events: none;
+        border-radius:5px;
 transform:scale(.3);
 transform-origin: top left;
     width: 1000px;
@@ -272,11 +275,12 @@ white-space: nowrap;
       margin: 0;
     }
     margin: 5px 10px;
+    margin-left: 20px;
   }
   .link{
       font-size: 30px;
-      display: block;
-      margin: 10px 20px;
+      margin: 10px;
+      margin-left:20px;
   }
 }
 .links{
