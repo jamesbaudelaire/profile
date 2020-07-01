@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-export const Project = ({ project, selectProject }) => {
-  const [load, setLoad] = useState(false);
+import { useAnimation } from "../animation";
 
-  useEffect(() => {
-    setLoad(true);
-  }, []);
+export const Project = ({ project, selectProject }) => {
+  const load = useAnimation();
 
   return (
-    <div id="project" className={`${load ? "loaded" : ""}`}>
+    <div id="project" {...load}>
       <i
         className="material-icons-round close-button"
         onClick={() => {

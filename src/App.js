@@ -7,38 +7,26 @@ import { Navbar } from "./components/navbar";
 
 import { Ronak } from "./ronak";
 
-let animate = () => {
-  [...Array(5)].forEach((frame, index) => {
-    setTimeout(() => {
-      document.querySelector("html").classList.add(`frame-${index + 1}`);
-    }, 500 * index);
-  });
-};
+import { useAnimation } from "./animation";
 
 export const App = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  return (
-    <div id="app">
-      <button
-        onClick={event => {
-          animate();
-          event.target.style.display = "none";
-        }}
-        id="design-button"
-      >
-        design
-      </button>
+  const load = useAnimation();
 
+  return (
+    <div id="app" {...load}>
       <div id="profile">
         <div className="name">{Ronak.name}</div>
         <div className="title">{Ronak.title}</div>
         <div className="subtitle">{Ronak.subtitle}</div>
       </div>
 
-      <Projects 
-      selected={selectedProject}
-      selectProject={setSelectedProject} projects={Ronak.projects} />
+      <Projects
+        selected={selectedProject}
+        selectProject={setSelectedProject}
+        projects={Ronak.projects}
+      />
 
       {selectedProject && (
         <Project selectProject={setSelectedProject} project={selectedProject} />
