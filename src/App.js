@@ -10,7 +10,7 @@ import { Ronak } from "./ronak";
 import { useAnimation } from "./animation";
 
 export const App = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(Ronak.projects[0]);
 
   const load = useAnimation();
 

@@ -15,11 +15,6 @@
   display: none;
   }
  
-iframe,#navbar button{
-  display: none;
-}
-
-
 
 body{
   overscroll-behavior: contain;
@@ -54,14 +49,14 @@ body{
 #profile{
   .name{
     margin:10px;
-    font-size:20px;
+    font-size:24px;
     }
     .title{
     margin:10px 20px;
-    font-size:18px;
+    font-size:20px;
     }
     .subtitle{
-      margin:10px 30px;
+      margin:10px 40px;
       font-size: 16px;
     }
     }
@@ -74,6 +69,23 @@ body{
   overflow: hidden;
   padding: 5px 10px;
   width:calc(100% - 20px);
+  background:rgb(20,20,20);
+
+  i{
+    margin: 5px 10px;
+    color:var(--theme);
+  }
+  button{
+background: none;
+    box-shadow:var(--inset);
+    margin:10px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    &:active{
+box-shadow: none;
+    }
+  }
 
   @media(min-width: 1000px){
     left: 20px;
@@ -86,26 +98,6 @@ body{
 }
 
 
-#navbar{
-  i{
-    margin: 5px 10px;
-    color:var(--theme);
-  }
-  button{
-    box-shadow:var(--inset);
-background: none;
-    margin:10px;
-    border-radius: 5px;
-    border:none;
-    cursor: pointer;
-    &:active{
-box-shadow: none;
-    }
-  }
-
-
-}
-
 #projects{
   white-space: nowrap;
   overflow: scroll;
@@ -113,25 +105,23 @@ box-shadow: none;
   margin:20px;
   border-radius: 5px;   
 
-
   @media(min-width: 1000px){
-    position: fixed;
     top: 120px;
-    left: 130px;
-    height: calc(100% - 160px);
+    left: 120px;
+    width: 160px;
+    position: absolute;
     };
   
   .project{
-    opacity: .25;
     cursor: pointer;
-width:300px;height:210px;
+padding:10px  20px;
 margin:20px;
 margin-right:0;
 border-radius: 5px;
-box-shadow:var(--shadow);
-transition:.5s;
+transition:color .5s;
 display: inline-block;
 overflow: hidden;
+box-shadow:var(--shadow);
 
 &:last-child{
   margin-right: 20px;
@@ -139,34 +129,18 @@ overflow: hidden;
 
 @media(min-width: 1000px){
 display: block;
-height: 500px;width:270px;
+text-align: center;
 margin:20px;
 };
 
-iframe{
-    display: unset !important;
-    border:none;
-    pointer-events: none;
-    border-radius:5px;
-transform:scale(.3);
-transform-origin: top left;
-width: 1000px;
-height: 700px;
-
-  @media(min-width: 1000px){
-    transform:scale(.61);
-    height: 830px;
-    width: 445px;
-  };
-  
-  }
 
   :last-child {
     margin-right:20px;
   }
 
   &.selected{
-    opacity:.75;
+    box-shadow:var(--inset);
+    color:black;
   }
 }
 }
@@ -178,36 +152,14 @@ height: 700px;
 
   #project{
     width:calc(100% - 40px);
-    background:#304ffe;
-    position: fixed;
-    bottom:90px;left:0;right:0;
     border-radius: 5px;
-    margin: auto;
-    padding-bottom:15px;
-    box-shadow: var(--shadow);
+    margin: 20px;
+padding: 10px 0;
     font-family: var(--font-secondary);
-    
-    opacity: 0;
-    transform:translatey(20px);
-    transition:.5s;
-&.loaded{
-  opacity: 1;
-  transform:translatey(0px);
-}
 
-    .close-button{
-      position: absolute;right:0;top:0;
-      background: rgba(0,0,0,.5);
-      box-shadow:var(--inset);
-      padding: 5px;
-      border-radius: 0 5px;
-      font-size: 30px;
-      cursor: pointer;
-    }
     .name{
       font-size: 20px;
-      margin:20px;
-      margin-bottom: 0px;
+      margin-left:20px;
       font-family: var(--font-primary);
     }
     .info{
@@ -217,10 +169,9 @@ height: 700px;
     }
 
 .details{
-overflow: auto;
-white-space: nowrap;
 
 .tools,.features,.links{
+
   i{
     margin:10px;
     font-size: 30px;
@@ -240,21 +191,26 @@ white-space: nowrap;
       font-size: 30px;
       margin: 10px;
       margin-left:20px;
+      color:var(--theme);
   }
 }
+
+
 .links{
   margin-right: 30px;
 }
 
 }
 
+
+
 @media(min-width: 1000px){
   position: fixed;
-    top: 0;
+    top: 0px;
     bottom: unset;
     width: 400px;
     margin: 20px;
-    left: 460px;
+    left: 300px;
 
     .tools,.features,.links{
     display: block !important;

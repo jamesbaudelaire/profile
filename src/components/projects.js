@@ -14,7 +14,7 @@ export const Projects = ({ projects, selectProject, selected }) => {
             selected && selected.id == p.id ? "selected" : ""
           }`}
         >
-          <iframe src={p.url} title={p.name} />
+          {p.name}
         </div>
       ))}
     </div>
