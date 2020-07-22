@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 export const Project = ({ project, selectProject }) => {
   return (
     <div id="project">
-      <div className="name">{project.name}</div>
-      <div className="info">{project.info}</div>
 
       <div className="details">
         <div className="features">

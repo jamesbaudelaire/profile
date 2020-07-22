@@ -4,7 +4,6 @@ export const Ronak = {
       name: "RSRV",
       id: "rsrv",
       url: `https://rsrv.netlify.app`,
-      info: `reservation manager`,
       tools: [
         "Firebase for authentication and database",
         "SendGrid for email notification",
@@ -34,7 +33,6 @@ export const Ronak = {
       name: "M3NU",
       id: `menu`,
       url: `https://m3nu.netlify.app/about`,
-      info: `app-ify the restaurant menu`,
       tools: [
         "Cloudinary for image hosting",
         "Netlify and Github for CI/CD",
@@ -63,7 +61,6 @@ export const Ronak = {
       name: "POKEDEX",
       id: `pokedex`,
       url: `https://pokedex-v2.netlify.app`,
-      info: ``,
       tools: [
         "Cloudinary for image hosting",
         "Netlify and Github for CI/CD",

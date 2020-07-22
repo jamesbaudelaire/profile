@@ -140,7 +140,7 @@ margin:20px;
 
   &.selected{
     box-shadow:var(--inset);
-    color:black;
+    color:#00c853;
   }
 }
 }
@@ -157,15 +157,11 @@ margin:20px;
 padding: 10px 0;
     font-family: var(--font-secondary);
 
-    .name{
+  
+    .info{
       font-size: 20px;
       margin-left:20px;
       font-family: var(--font-primary);
-    }
-    .info{
-      margin: 10px 20px;
-      white-space: normal;padding-left: 20px;
-
     }
 
 .details{
@@ -176,7 +172,7 @@ padding: 10px 0;
     margin:10px;
     font-size: 30px;
   }
-  margin: 0 30px;
+  margin: 0 20px;
   margin-right: 0;
   display: inline-block;
   .feature,.tool{
