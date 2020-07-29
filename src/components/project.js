@@ -4,6 +4,7 @@ export const Project = ({ project, selectProject }) => {
   return (
     <div id="project">
 
+
       <div className="details">
         <div className="features">
           <i className="material-icons-round">stars</i>
@@ -34,7 +35,6 @@ export const Project = ({ project, selectProject }) => {
             <a href={link} key={icon} target="_blank" rel="noopener noreferrer">
               <div>
                 <i className="material-icons-round link">{icon}</i>
-                {name}
               </div>
             </a>
           ))}

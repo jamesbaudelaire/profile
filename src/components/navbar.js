@@ -9,19 +9,13 @@ export const Navbar = ({ phone, email }) => {
     {
       icon: "email",
       link: `mailto:${email}`
-    },
-    {
-      icon: "code",
-      link: `https://github.com/jamesbaudelaire`
     }
   ];
   return (
     <div id="navbar">
       {links.map(({ icon, link }) => (
         <a href={link} key={icon} target="_blank" rel="noopener noreferrer">
-          <button>
-            <i className="material-icons-round">{icon}</i>
-          </button>
+          <i className="material-icons-round">{icon}</i>
         </a>
       ))}
     </div>

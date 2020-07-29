@@ -4,6 +4,7 @@ import "./main.scss";
 import { Project } from "./components/project";
 import { Projects } from "./components/projects";
 import { Navbar } from "./components/navbar";
+import {Images} from "./components/images"
 
 import { Ronak } from "./ronak";
 
@@ -22,6 +23,10 @@ export const App = () => {
         <div className="subtitle">{Ronak.subtitle}</div>
       </div>
 
+      <Navbar email={Ronak.email} phone={Ronak.phone} />
+
+<Images project={selectedProject}/>
+
       <Projects
         selected={selectedProject}
         selectProject={setSelectedProject}
@@ -32,7 +37,6 @@ export const App = () => {
         <Project selectProject={setSelectedProject} project={selectedProject} />
       )}
 
-      <Navbar email={Ronak.email} phone={Ronak.phone} />
     </div>
   );
 };

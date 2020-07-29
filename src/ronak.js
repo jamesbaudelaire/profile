@@ -31,7 +31,7 @@ export const Ronak = {
     },
     {
       name: "M3NU",
-      id: `menu`,
+      id: `m3nu`,
       url: `https://m3nu.netlify.app/about`,
       tools: [
         "Cloudinary for image hosting",
@@ -56,32 +56,9 @@ export const Ronak = {
         "filter by type",
         "URL routing"
       ]
-    },
-    {
-      name: "POKEDEX",
-      id: `pokedex`,
-      url: `https://pokedex-v2.netlify.app`,
-      tools: [
-        "Cloudinary for image hosting",
-        "Netlify and Github for CI/CD",
-        "React"
-      ],
-      links: [
-        {
-          icon: "link",
-          link: `https://pokedex-v2.netlify.app`,
-          name: "URL"
-        },
-        {
-          icon: "code",
-          link: `https://github.com/jamesbaudelaire/pokedex`,
-          name: "GITHUB"
-        }
-      ],
-      features: ["web speech API", "filter by type"]
     }
   ],
-  name: "Ronak Mistry",
+  name: "RONAK MISTRY",
   phone: `4794596794`,
   email: "ronakmystery@gmail.com",
   title: "Web ( Designer & Developer )",
