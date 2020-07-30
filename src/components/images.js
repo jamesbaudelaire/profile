@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export const Images = ({ project }) => {
+  let v = "v1596095072";
   return (
     <div id="images">
       {[1, 2].map(n => (
         <img
           key={n}
           alt={`${project.id}-screen-${n}`}
-          src={`https://res.cloudinary.com/baudelaire/image/upload/w_500/portfolio/${
+          src={`https://res.cloudinary.com/baudelaire/image/upload/w_700/${v}/portfolio/${
             project.id
           }-${n}.png`}
         />
