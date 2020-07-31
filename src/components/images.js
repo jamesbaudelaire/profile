@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Images = ({ project }) => {
-  let v = "v1596095072";
+  let v = "v1596163074";
   return (
     <div id="images">
       {[1, 2].map(n => (
