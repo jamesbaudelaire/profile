@@ -7,6 +7,7 @@ export const Images = ({ project }) => {
       {[1, 2].map(n => (
         <img
           key={n}
+          className={`img-${n}`}
           alt={`${project.id}-screen-${n}`}
           src={`https://res.cloudinary.com/baudelaire/image/upload/w_700/${v}/portfolio/${
             project.id
