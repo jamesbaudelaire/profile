@@ -79,7 +79,6 @@ export const Ronak = {
   phone: `4794596794`,
   email: "ronakmystery@gmail.com",
   title: "Web ( Designer & Developer )",
-  subtitle: "specialized in frontend UI/UX",
   links: [
     {
       name: "Github",
