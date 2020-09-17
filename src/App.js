@@ -35,6 +35,12 @@ export const App = () => {
       {selectedProject && (
         <Project selectProject={setSelectedProject} project={selectedProject} />
       )}
+
+      <img
+        alt="qr"
+        id="qr-link"
+        src="https://res.cloudinary.com/baudelaire/image/upload/v1600299895/portfolio/qr.png"
+      />
     </div>
   );
 };

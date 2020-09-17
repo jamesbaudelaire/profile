@@ -277,3 +277,13 @@ height:210px;
   }
   
     }
+
+
+    #qr-link{
+      margin:20px;width:100px;
+      border-radius:10px;
+      box-shadow: var(--shadow);
+      @media(min-width: 1000px){
+      position: absolute;bottom:0;right:0;
+      }
+    }
