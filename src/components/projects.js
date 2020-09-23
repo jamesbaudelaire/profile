@@ -1,5 +1,4 @@
 import React from "react";
-
 export const Projects = ({ projects, selectProject, selected }) => {
   return (
     <div id="projects">
@@ -7,7 +6,7 @@ export const Projects = ({ projects, selectProject, selected }) => {
         <div
           id={p.id}
           key={p.name}
-          onClick={element => {
+          onClick={(element) => {
             selectProject(projects[index]);
           }}
           className={`project ${

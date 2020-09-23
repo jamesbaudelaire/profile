@@ -10,13 +10,13 @@ import { Ronak } from "./ronak";
 
 import { useAnimation } from "./animation";
 
+import { motion } from "framer-motion";
+
 export const App = () => {
   const [selectedProject, setSelectedProject] = useState(Ronak.projects[0]);
 
-  const load = useAnimation();
-
   return (
-    <div id="app" {...load}>
+    <motion.div id="app" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <div id="profile">
         <div className="name">{Ronak.name}</div>
         <div className="title">{Ronak.title}</div>
@@ -41,6 +41,6 @@ export const App = () => {
         id="qr-link"
         src="https://res.cloudinary.com/baudelaire/image/upload/v1600299895/portfolio/qr.png"
       />
-    </div>
+    </motion.div>
   );
 };
