@@ -33,7 +33,11 @@ export const App = () => {
       />
 
       {selectedProject && (
-        <Project selectProject={setSelectedProject} project={selectedProject} />
+        <Project
+          selectProject={setSelectedProject}
+          key={selectedProject.id}
+          project={selectedProject}
+        />
       )}
 
       <img

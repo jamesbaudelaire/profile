@@ -1,34 +1,54 @@
 import React, { useEffect, useState } from "react";
 
+import { motion } from "framer-motion";
+
 export const Project = ({ project, selectProject }) => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const listItem = {
+    hidden: { opacity: 0, x: 100 },
+    show: { opacity: 1, x: 0 }
+  };
+
   return (
     <div id="project">
-
-
-      <div className="details">
-        <div className="features">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="details"
+      >
+        <motion.div className="features" variants={listItem}>
           <i className="material-icons-round">stars</i>
           FEATURES
-          {project.features.map(feature => (
+          {project.features.map((feature) => (
             <div key={feature} className="feature">
               <i className="material-icons-round">subdirectory_arrow_right</i>
               {feature}
             </div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="tools">
+        <motion.div className="tools" variants={listItem}>
           <i className="material-icons-round">build</i>
           TOOLS
-          {project.tools.map(tool => (
+          {project.tools.map((tool) => (
             <div key={tool} className="tool">
               <i className="material-icons-round">subdirectory_arrow_right</i>
               {tool}
             </div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="links">
+        <motion.div className="links" variants={listItem}>
           <i className="material-icons-round">public</i>
           LINKS
           {project.links.map(({ icon, link, name }) => (
@@ -38,8 +58,8 @@ export const Project = ({ project, selectProject }) => {
               </div>
             </a>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
