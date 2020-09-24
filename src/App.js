@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./main.scss";
+import "./index.scss";
 
-import { Project } from "./components/project";
+import { Details } from "./components/details";
 import { Projects } from "./components/projects";
 import { Navbar } from "./components/navbar";
 import { Images } from "./components/images";
@@ -18,9 +19,8 @@ export const App = () => {
       <div id="profile">
         <div className="name">{Ronak.name}</div>
         <div className="title">{Ronak.title}</div>
+        <Navbar email={Ronak.email} phone={Ronak.phone} />
       </div>
-
-      <Navbar email={Ronak.email} phone={Ronak.phone} />
 
       <Images project={selectedProject} />
 
@@ -31,7 +31,7 @@ export const App = () => {
       />
 
       {selectedProject && (
-        <Project
+        <Details
           selectProject={setSelectedProject}
           key={selectedProject.id}
           project={selectedProject}
@@ -41,6 +41,7 @@ export const App = () => {
       <img
         alt="qr"
         id="qr-link"
+        className="shadow"
         src="https://res.cloudinary.com/baudelaire/image/upload/v1600299895/portfolio/qr.png"
       />
     </motion.div>

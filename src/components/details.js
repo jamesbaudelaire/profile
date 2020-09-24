@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
-import "../styles/project.scss";
+import "../styles/details.scss";
 
-export const Project = ({ project, selectProject }) => {
+export const Details = ({ project, selectProject }) => {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -20,38 +20,43 @@ export const Project = ({ project, selectProject }) => {
   };
 
   return (
-    <div id="project">
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className="details"
-      >
-        <motion.div className="features" variants={listItem}>
-          <i className="material-icons-round">stars</i>
-          FEATURES
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      id="details"
+      className="shadow round"
+    >
+      <motion.div variants={listItem} className="features detail shadow round">
+        <i className="material-icons-round icon">stars</i>
+        <span className="title">FEATURES</span>
+        <div>
           {project.features.map((feature) => (
-            <div key={feature} className="feature">
+            <div key={feature}>
               <i className="material-icons-round">subdirectory_arrow_right</i>
               {feature}
             </div>
           ))}
-        </motion.div>
+        </div>
+      </motion.div>
 
-        <motion.div className="tools" variants={listItem}>
-          <i className="material-icons-round">build</i>
-          TOOLS
+      <motion.div variants={listItem} className="tools detail shadow round">
+        <i className="material-icons-round icon">build</i>
+        <span className="title">TOOLS</span>
+        <div>
           {project.tools.map((tool) => (
-            <div key={tool} className="tool">
+            <div key={tool}>
               <i className="material-icons-round">subdirectory_arrow_right</i>
               {tool}
             </div>
           ))}
-        </motion.div>
+        </div>
+      </motion.div>
 
-        <motion.div className="links" variants={listItem}>
-          <i className="material-icons-round">public</i>
-          LINKS
+      <motion.div variants={listItem} className="links detail shadow round">
+        <i className="material-icons-round icon">public</i>
+        <span className="title">LINKS</span>
+        <div>
           {project.links.map(({ icon, link, name }) => (
             <a href={link} key={icon} target="_blank" rel="noopener noreferrer">
               <div>
@@ -59,8 +64,8 @@ export const Project = ({ project, selectProject }) => {
               </div>
             </a>
           ))}
-        </motion.div>
+        </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };

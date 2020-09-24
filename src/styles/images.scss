@@ -1,11 +1,11 @@
 #images{
   box-shadow: var(--inset);
-  border-radius:30px;
   white-space: nowrap;
   overflow-x: scroll;
-  margin:20px;
 
   img{
+    filter: drop-shadow(4px 4px 4px rgba(0,0,0,.5));
+
     margin:20px;
     margin-right: 0;
     &:last-child{
