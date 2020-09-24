@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
+import "../styles/project.scss";
 
 export const Project = ({ project, selectProject }) => {
   const container = {
@@ -8,14 +9,14 @@ export const Project = ({ project, selectProject }) => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
+        staggerChildren: 0.2
       }
     }
   };
 
   const listItem = {
-    hidden: { opacity: 0, x: 100 },
-    show: { opacity: 1, x: 0 }
+    hidden: { opacity: 0, y: 50 },
+    show: { opacity: 1, y: 0 }
   };
 
   return (

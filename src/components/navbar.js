@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../styles/navbar.scss";
 export const Navbar = ({ phone, email }) => {
   let links = [
     {

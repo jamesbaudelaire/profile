@@ -8,8 +8,6 @@ import { Images } from "./components/images";
 
 import { Ronak } from "./ronak";
 
-import { useAnimation } from "./animation";
-
 import { motion } from "framer-motion";
 
 export const App = () => {

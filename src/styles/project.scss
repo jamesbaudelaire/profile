@@ -1,0 +1,59 @@
+#project{
+  width:calc(100% - 40px);
+  border-radius: 5px;
+  margin: 20px;
+padding: 10px 0;
+  font-family: var(--font-secondary);
+
+
+  .info{
+    font-size: 20px;
+    margin-left:20px;
+    font-family: var(--font-primary);
+  }
+
+.details{
+
+.tools,.features,.links{
+  div{
+    margin:0px 20px;
+  }
+  padding: 0 20px 10px 0;
+font-weight: bold;
+font-family: var(--font-primary);
+margin:20px;
+box-shadow:var(--shadow);
+border-radius: 20px;
+i{
+  margin:10px;
+  font-size: 40px;
+}
+display: inline-block;
+.feature,.tool{
+  font-family: var(--font-secondary);
+  font-weight: 100;
+  i{
+    font-size: 20px;
+    margin: 0;
+  }
+}
+.link{
+    font-size: 24px;
+    margin: 10px;
+    margin-left:20px;
+    color:white;
+    background:var(--theme);
+    box-shadow:var(--shadow);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+}
+
+
+.links{
+margin-right: 30px;
+}
+
+}
+
+  }

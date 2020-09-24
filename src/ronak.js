@@ -5,10 +5,10 @@ export const Ronak = {
       id: "rsrv",
       url: `https://rsrv.netlify.app`,
       tools: [
-        "Firebase for authentication and database",
-        "SendGrid for email notification",
-        "Netlify and Github for CI/CD",
-        "React and Redux"
+        "Firebase ( authentication & database )",
+        "SendGrid ( email notification )",
+        "Netlify & Github ( CI/CD )",
+        "React & Redux"
       ],
       links: [
         {
@@ -21,7 +21,7 @@ export const Ronak = {
         }
       ],
       features: [
-        "CRUD reservations and notetaking",
+        "CRUD",
         "realtime cloud database per user",
         "form with email notification",
         "calendar"
@@ -32,8 +32,8 @@ export const Ronak = {
       id: `m3nu`,
       url: `https://m3nu.netlify.app/about`,
       tools: [
-        "Cloudinary for image hosting",
-        "Netlify and Github for CI/CD",
+        "Cloudinary ( image hosting )",
+        "Netlify & Github ( CI/CD )",
         "React"
       ],
       links: [
@@ -58,8 +58,8 @@ export const Ronak = {
       id: "pokedex",
       url: `https://pokedex-v2.netlify.app/`,
       tools: [
-        "Cloudinary for image hosting",
-        "Netlify and Github for CI/CD",
+        "Cloudinary ( image hosting )",
+        "Netlify & Github ( CI/CD )",
         "React"
       ],
       links: [

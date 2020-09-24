@@ -1,0 +1,37 @@
+#images{
+  box-shadow: var(--inset);
+  border-radius:30px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin:20px;
+
+  img{
+    margin:20px;
+    margin-right: 0;
+    &:last-child{
+      margin-right: 20px;
+    }
+    height:250px;
+  }
+
+  .img-1{
+height:210px;
+  }
+
+    @media(min-width: 1000px){
+      box-shadow: none;
+      width: auto;
+      position: absolute;
+        top: 0px;
+        bottom: unset;
+        margin: 20px;
+        left: 260px;
+        .img-1{
+          height:300px;
+              }
+              .img-2{
+                height:360px;
+              }
+
+    }
+}

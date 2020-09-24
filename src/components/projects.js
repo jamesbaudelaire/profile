@@ -1,4 +1,8 @@
 import React from "react";
+import "../styles/projects.scss"
+
+
+
 export const Projects = ({ projects, selectProject, selected }) => {
   return (
     <div id="projects">

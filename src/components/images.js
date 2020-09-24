@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import "../styles/images.scss"
 
 export const Images = ({ project }) => {
   let v = "v1596163074";
