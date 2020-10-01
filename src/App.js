@@ -6,6 +6,7 @@ import { Details } from "./components/details";
 import { Projects } from "./components/projects";
 import { Navbar } from "./components/navbar";
 import { Images } from "./components/images";
+import { QR } from "./components/qr";
 
 import { Ronak } from "./ronak";
 
@@ -13,9 +14,15 @@ import { motion } from "framer-motion";
 
 export const App = () => {
   const [selectedProject, setSelectedProject] = useState(Ronak.projects[0]);
+  const [show, setShow] = useState(false);
 
   return (
-    <motion.div id="app" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    <motion.div
+      id="app"
+      className={show ? "disable-scroll" : ""}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <div id="profile">
         <div className="name">{Ronak.name}</div>
         <div className="title">{Ronak.title}</div>
@@ -38,12 +45,18 @@ export const App = () => {
         />
       )}
 
-      <img
-        alt="qr"
-        id="qr-link"
-        className="shadow"
-        src="https://res.cloudinary.com/baudelaire/image/upload/v1600299895/portfolio/qr.png"
-      />
+      {show ? (
+        <QR setShow={setShow} />
+      ) : (
+        <i
+          className="material-icons-round share"
+          onClick={() => {
+            setShow(true);
+          }}
+        >
+          qr_code_2
+        </i>
+      )}
     </motion.div>
   );
 };
