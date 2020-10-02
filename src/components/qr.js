@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import img from "../assets/qr.png";
 import "../styles/qr.scss";
 
 export const QR = ({ setShow }) => {
@@ -14,13 +14,12 @@ export const QR = ({ setShow }) => {
       }}
     >
       <motion.img
-        initial={{ opacity: 0, scale: 0.25 }}
+        initial={{ opacity: 0, scale: 0.1 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.25 }}
         alt="qr"
         id="qr-link"
         className="shadow"
-        src="https://res.cloudinary.com/baudelaire/image/upload/v1600299895/portfolio/qr.png"
+        src={img}
       />
     </motion.div>
   );
