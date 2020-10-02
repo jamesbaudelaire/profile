@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img from "../assets/qr.png";
 import "../styles/qr.scss";
 
 export const QR = ({ setShow }) => {
@@ -19,7 +18,7 @@ export const QR = ({ setShow }) => {
         alt="qr"
         id="qr-link"
         className="shadow"
-        src={img}
+        src="https://res.cloudinary.com/baudelaire/image/upload/v1600299895/portfolio/qr.png"
       />
     </motion.div>
   );
