@@ -15,8 +15,8 @@ export const Details = ({ project, selectProject }) => {
   };
 
   const listItem = {
-    hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0 }
+    hidden: { opacity: 0, x: 50 },
+    show: { opacity: 1, x: 0 }
   };
 
   return (

@@ -12,9 +12,7 @@ export const QR = ({ setShow }) => {
         setShow(false);
       }}
     >
-      <motion.img
-        initial={{ opacity: 0, scale: 0.1 }}
-        animate={{ opacity: 1, scale: 1 }}
+      <img
         alt="qr"
         id="qr-link"
         className="shadow"
