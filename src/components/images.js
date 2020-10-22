@@ -4,7 +4,7 @@ import "../styles/images.scss";
 
 export const Images = ({ project }) => {
   return (
-    <div id="images" className="round">
+    <div id="images">
       {[1, 2].map((n) => (
         <motion.img
           initial={{ y: 50, opacity: 0 }}

@@ -25,7 +25,7 @@ export const Details = ({ project, selectProject }) => {
       initial="hidden"
       animate="show"
       id="details"
-      className="shadow round"
+      className="shadow"
     >
       <motion.div variants={listItem} className="features detail shadow round">
         <i className="material-icons-round icon">stars</i>
