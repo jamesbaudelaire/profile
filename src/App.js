@@ -26,6 +26,8 @@ export const App = () => {
       <div id="profile">
         <div className="name">{Ronak.name}</div>
         <div className="title">{Ronak.title}</div>
+        <div className="sub-title">{Ronak.subTitle}</div>
+
         <Navbar email={Ronak.email} phone={Ronak.phone} />
       </div>
 

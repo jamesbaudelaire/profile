@@ -47,8 +47,8 @@ export const Ronak = {
         }
       ],
       features: [
+        "admin settings",
         "save and share items",
-        "quick actions",
         "filter by type",
         "URL routing"
       ]
@@ -78,7 +78,8 @@ export const Ronak = {
   name: "RONAK MISTRY",
   phone: `4794596794`,
   email: "ronakmystery@gmail.com",
-  title: "Web ( Designer & Developer )",
+  title: "Front End Web",
+  subTitle: "Designer & Developer",
   links: [
     {
       name: "Github",
