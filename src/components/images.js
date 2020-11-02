@@ -13,7 +13,7 @@ export const Images = ({ project }) => {
           key={`${project.id}-${n}`}
           className={`img-${n}`}
           alt={`${project.id}-screen-${n}`}
-          src={`https://res.cloudinary.com/baudelaire/image/upload/v1602633195/w_700/portfolio/${project.id}-${n}.png`}
+          src={`https://res.cloudinary.com/baudelaire/image/upload/w_700/portfolio/${project.id}-${n}`}
         />
       ))}
     </div>
