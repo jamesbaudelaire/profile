@@ -8,11 +8,11 @@ import { Navbar } from "./components/navbar";
 import { Images } from "./components/images";
 import { QR } from "./components/qr";
 
-import { Ronak } from "./ronak";
+import Ronak from "./data";
 
 import { motion } from "framer-motion";
 
-export const App = () => {
+export const Home = () => {
   const [selectedProject, setSelectedProject] = useState(Ronak.projects[0]);
   const [show, setShow] = useState(false);
 

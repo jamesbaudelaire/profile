@@ -1,0 +1,10 @@
+#piano{
+  #piano-img{
+    width:calc(100% - 80px);
+    box-shadow: var(--shadow);
+    max-width:300px;
+    border-radius: 50%;
+    display: block;
+    margin: 40px auto;
+  }
+}
