@@ -86,4 +86,22 @@ margin:20px 60px;
 
 
 
+
+.round{
+  border-radius: 30px;
+}
+.shadow{
+  box-shadow:var(--shadow)
+}
+
+.disable-scroll{
+  position: fixed
+}
  
+
+#home{
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-family: var(--font-secondary);
+}

@@ -17,7 +17,7 @@
         },
         {
           "icon": "code",
-          "link": "reserve"
+          "link": "https://github.com/jamesbaudelaire/reserve"
         }
       ],
       "features": [
@@ -43,7 +43,7 @@
         },
         {
           "icon": "code",
-          "link": "menu"
+          "link": "https://github.com/jamesbaudelaire/menu"
         }
       ],
       "features": [
@@ -69,7 +69,7 @@
         },
         {
           "icon": "code",
-          "link": "pokedex"
+          "link": "https://github.com/jamesbaudelaire/pokedex"
         }
       ],
       "features": ["filter search", "size comparison"]
@@ -85,10 +85,5 @@
       "name": "Github",
       "url": "https://github.com/jamesbaudelaire"
     }
-  ],
-  "piano": {
-    "title": "pianist",
-    "about": "A master of Classical and Romantic improvisation influenced by Chopin",
-    "repertoire": "21 Chopin Nocturnes & 19 Chopin Valses"
-  }
+  ]
 }
