@@ -16,7 +16,7 @@ export const QR = ({ setShow }) => {
         alt="qr"
         id="qr-link"
         className="shadow"
-        src="https://res.cloudinary.com/baudelaire/image/upload/v1600299895/portfolio/qr.png"
+        src="https://res.cloudinary.com/baudelaire/image/upload/v1605629012/portfolio/web-qr.png"
       />
     </motion.div>
   );
