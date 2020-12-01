@@ -45,7 +45,7 @@ export const Web = () => {
         />
       )}
 
-      {show ? (
+      {/* {show ? (
         <QR setShow={setShow} />
       ) : (
         <i
@@ -56,7 +56,7 @@ export const Web = () => {
         >
           qr_code_2
         </i>
-      )}
+      )} */}
     </motion.div>
   );
 };

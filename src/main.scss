@@ -103,5 +103,42 @@ margin:20px 60px;
   margin: 20px;
   text-align: center;
   font-size: 50px;
+
+#skills{
+  max-width: 200px;
+  margin:20px auto;
+  display: grid;
+  font-size: 20px;
+  text-transform: uppercase;
   font-family: var(--font-secondary);
+
+  .skill{
+    box-shadow: var(--shadow);
+  margin: 20px;
+  display: inline-block;
+  text-align: left;
+  padding: 5px 10px;
+  background: var(--theme);
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 50px;
+  position: relative;
+    span{
+      position: absolute;
+      right:5px;
+      margin: 5px;
+      font-size: 30px;
+      box-shadow: var(--shadow);
+      border-radius: 50%;
+      padding: 5px;
+    }
+  }
+}
+
+
+  #name{
+    font-family: var(--font-primary);
+    font-size: 30px;
+  }
 }
