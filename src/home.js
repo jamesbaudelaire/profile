@@ -12,12 +12,17 @@ export const Home = () => {
       <div id="skills">
         <Link to="/web" className="skill">
           <span className="material-icons-round">code</span>
-          Coder
+          Web
         </Link>
 
         <Link to="/piano" className="skill">
           <span className="material-icons-round">music_note</span>
           Pianist
+        </Link>
+
+        <Link to="/artist" className="skill">
+          <span className="material-icons-round">brush</span>
+          Artist
         </Link>
       </div>
     </motion.div>

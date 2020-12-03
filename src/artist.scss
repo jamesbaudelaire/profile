@@ -1,0 +1,24 @@
+#artist{
+  text-align: center;
+  margin:40px;
+  #name{
+    font-size: 30px;
+    margin:10px;
+  }
+  #about{
+    font-family: var(--font-secondary);
+  }
+  #navbar{
+    margin:10px;
+  }
+  #sketchfab{
+    box-shadow:var(--shadow);
+    color:white;
+    background:var(--theme);
+    border-radius: 5px;
+    cursor: pointer;
+font-size: 30px;
+    margin:10px;
+          padding: 5px 10px;
+  }
+}

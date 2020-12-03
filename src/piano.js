@@ -33,6 +33,7 @@ export const Piano = () => {
           music_video
         </i>
       </a>
+
       {/* <img
         alt="qr"
         id="piano-qr"
