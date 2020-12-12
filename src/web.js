@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import { Details } from "./components/details";
 import { Projects } from "./components/projects";
-import { Navbar } from "./components/navbar";
 import { Images } from "./components/images";
 import { QR } from "./components/qr";
 
@@ -21,14 +20,6 @@ export const Web = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <div id="profile">
-        <div className="name">{Ronak.name}</div>
-        <div className="title">{Ronak.title}</div>
-        <div className="sub-title">{Ronak.subTitle}</div>
-
-        <Navbar email={Ronak.email} phone={Ronak.phone} />
-      </div>
-
       <Images project={selectedProject} />
 
       <Projects
@@ -44,19 +35,6 @@ export const Web = () => {
           project={selectedProject}
         />
       )}
-
-      {/* {show ? (
-        <QR setShow={setShow} />
-      ) : (
-        <i
-          className="material-icons-round share"
-          onClick={() => {
-            setShow(true);
-          }}
-        >
-          qr_code_2
-        </i>
-      )} */}
     </motion.div>
   );
 };
