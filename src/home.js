@@ -32,7 +32,7 @@ export const Home = () => {
         </a>
 
         <a
-          href={"https://sketchfab.com/ronakmystery"}
+          href={"https://www.tiktok.com/@ronak.mistry"}
           target="_blank"
           rel="noopener noreferrer"
           className="skill"
