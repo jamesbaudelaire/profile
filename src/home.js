@@ -10,7 +10,7 @@ import Ronak from "./data";
 export const Home = () => {
   return (
     <motion.div id="home" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <div id="name">RONAK MISTRY</div>
+      <div id="name">Ronak Mistry</div>
       <Navbar email={Ronak.email} phone={Ronak.phone} />
 
       <div id="skills">

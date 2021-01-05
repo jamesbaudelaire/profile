@@ -28,6 +28,23 @@
       ]
     },
     {
+      "name": "TOUR",
+      "id": "tour",
+      "url": "https://rsrv.netlify.app",
+      "tools": ["Cloudinary ( image hosting )", "Netlify & Github ( CI/CD )"],
+      "links": [
+        {
+          "icon": "link",
+          "link": "https://tour-beta.netlify.app"
+        },
+        {
+          "icon": "code",
+          "link": "https://github.com/jamesbaudelaire/tour-app-beta"
+        }
+      ],
+      "features": ["advanced filtering", "time sorting"]
+    },
+    {
       "name": "M3NU",
       "id": "m3nu",
       "url": "https://m3nu.netlify.app/about",
