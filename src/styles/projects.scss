@@ -3,11 +3,11 @@
 
     width: 100%;
     position:fixed;bottom:0;
-    padding-bottom:10px;
     white-space: nowrap;
     overflow: scroll;
     box-shadow: var(--inset);  
     z-index: 100;
+    background: var(--light);
   
     @media(min-width: 1000px){
       width: max-content;
