@@ -31,7 +31,7 @@ export const Home = () => {
           Pianist
         </a>
 
-        <a
+        {/* <a
           href={"https://www.tiktok.com/@ronak.mistry"}
           target="_blank"
           rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export const Home = () => {
         >
           <span className="material-icons-round">brush</span>
           Artist
-        </a>
+        </a> */}
       </div>
     </motion.div>
   );
